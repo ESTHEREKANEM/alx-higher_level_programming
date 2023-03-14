@@ -1,12 +1,12 @@
-!/usr/bin/node
-// Checks the parameters provided
+#!/usr/bin/node
 
-class Rectangle {
+// Checks for Rectangle parameters
+
+module.exports = class Rectangle {
   constructor (width, height) {
-    if (typeof w === 'number' && w > 0 && typeof h === 'number' && h > 0) {
+    if (typeof width === 'number' && typeof height === 'number' && width > 0 && height > 0) {
       this.width = width;
       this.height = height;
     }
   }
-}
-module.exports = Rectangle;
+};
